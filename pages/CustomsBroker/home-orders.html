@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="./output.css" rel="stylesheet">
+  </head>
+  <body class="font-['cairo']">
+    
+    <main class="flex">
+      <div id="sidebar" class="flex flex-col max-sm:w-[75%] min-w-[200px]  gap-7 p-0 max-sm:-translate-x-[2000px] rtl:max-sm:translate-x-[2000px] transition-all duration-300 ease-in-out max-sm:fixed max-sm:z-10 bg-white max-sm:h-screen ">
+
+
+        <div id="closeBtn" class="btn-close self-end sm:hidden m-4"></div>
+        <img src="/assets/logo.svg" alt="logo" class="w-32 mx-auto">
+        <div class="sidebarlinks">
+          <ul class="flex flex-col gap-6">
+            <li ><a href="/pages/CustomsBroker/index.html" class="flex gap-3 p-2 hover:bg-[#f15b258c] hover:text-white ">
+              <img id="a" src="/assets/order.svg" alt="" class="w-6">
+              <p>تقديم طلب</p>
+            </a></li>
+            <li><a href="/pages/CustomsBroker/home-orders.html" class="flex gap-3 hover:bg-[#f15b258c] hover:text-white p-2">
+              <img src="/assets/orders.svg" alt="" class="w-6">
+              <p>الطلبات</p>
+            </a></li>
+            <li><a href="#" class="flex gap-3 hover:bg-[#f15b258c] hover:text-white p-2">
+              <img src="/assets/process.svg" alt="" class="w-6">
+              <p>العمليات</p>
+            </a></li>
+            <li><a href="#" class="flex gap-3 hover:bg-[#f15b258c] hover:text-white p-2">
+              <img src="/assets/settings.svg" alt="" class="w-6">
+              <p>الإعدادات</p>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <section class="w-full h-full bg-[#F3F6F9]">
+        <header class="bg-white w-full h-20 p-3 flex justify-between border-bottom border-solid border-[#DADAE1]">
+          <div id="sidebarbtn" class="flex-1 flex items-center ">
+            <svg class="cursor-pointer rtl:rotate-90 ltr:-rotate-90 sm:hidden max-sm:w-8 max-sm:h-8" width="22" height="22" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2451 31.2103C17.2335 30.0572 18.9696 29.9236 20.1227 30.912L43.9997 51.378L67.8767 30.912C69.0299 29.9236 70.7659 30.0572 71.7543 31.2103C72.7428 32.3635 72.6092 34.0995 71.4561 35.088L45.7894 57.088C44.7596 57.9707 43.2399 57.9707 42.21 57.088L16.5434 35.088C15.3902 34.0995 15.2567 32.3635 16.2451 31.2103Z" fill="#1C274C"/>
+              </svg>
+              
+              
+          </div>
+          <div class="flex gap-7 max-sm:gap-5 rtl:flex-row-reverse items-center">
+            <img src="/assets/saudi.svg" alt="" class="w-8 h-8 ">
+            <div id="notificationBtn" class="sm:relative">
+              <img  src="/assets/call.svg" alt="" class="w-8 h-8">
+
+
+
+              <div id="notification" class="absolute gap-3 bg-[#fff] hidden flex-col w-[300px] h-[400px] p-3 rounded-2xl drop-shadow-lg max-sm:ltr:left-[50%] max-sm:rtl:left-[50%] rtl:left-0 ltr:right-0 max-sm:-translate-x-[50%] transition-all duration-200 ease-in-out ">
+
+
+                <div class="flex justify-between ">
+                  <div class="flex gap-2">
+                    <img src="/assets/call.svg" alt="call" class="w-5">
+                    <p class="text-sm flex gap-2">الإشعارات<span class="w-5 h-5 rounded-full text-white bg-[#F15A25] flex items-center justify-center">1</span></p>
+                  </div>
+
+                  
+                  <img src="/assets/setting-outline.svg" alt="" class="w-5">
+                </div>
+
+
+                <div class="flex-1 overflow-y-auto">
+                    <div class="text-sm pb-3 border-b border-[#c9c9c9]">
+                      تم نشر طلب من المخلص الجمركي برقم #566666 566 .. يُرجى إتباع الرابط لإرسال الموافقة أو الرفض.
+                    </div>
+                    <div class="text-sm pb-3 border-b border-[#c9c9c9]">
+                      تم نشر طلب من المخلص الجمركي برقم #566666 566 .. يُرجى إتباع الرابط لإرسال الموافقة أو الرفض.
+                    </div>
+                    <div class="text-sm pb-3 border-b border-[#c9c9c9]">
+                      تم نشر طلب من المخلص الجمركي برقم #566666 566 .. يُرجى إتباع الرابط لإرسال الموافقة أو الرفض.
+                    </div>
+                    <div class="text-sm pb-3 border-b border-[#c9c9c9]">
+                      تم نشر طلب من المخلص الجمركي برقم #566666 566 .. يُرجى إتباع الرابط لإرسال الموافقة أو الرفض.
+                    </div>
+                    <div class="text-sm pb-3 border-b border-[#c9c9c9]">
+                      تم نشر طلب من المخلص الجمركي برقم #566666 566 .. يُرجى إتباع الرابط لإرسال الموافقة أو الرفض.
+                    </div>
+                </div>
+                <div class="flex justify-between">
+                  <button class="btn text-xs px-2">تحديد الكل كمقروء</button>
+                  <button class="btn bg-white border border-[#c9c9c9] text-[#F15A25] text-xs">عرض الكل</button>
+                </div>
+              </div>
+            </div>
+            <img src="/assets/setting-outline.svg" alt="" class="w-8 h-8 max-sm:w-6">
+            <img src="/assets/personalPic.svg" alt="" class="w-8 h-8">
+          </div>
+        </header>
+        <div class="w-full px-10 py-2  bg-white flex flex-col gap-3">
+          <h1>العنوان</h1>
+          <p class="text-sm text-[#667085]">يأتي النص الأساسي الوصفي هنا</p>
+        </div>
+        <div class=" bg-[#F3F6F9] w-full min-h-full p-14 max-sm:p-1">
+          <div class="bg-white p-3 flex flex-col gap-10">
+            <div class="flex max-sm:flex-col items-center gap-4">
+              <div class="flex-1 flex items-center gap-3">
+                <img src="/assets/ordersActive.svg" alt="" class="w-9">
+                <p class="text-2xl text-[#F15A25] font-semibold">الطلبات</p>
+              </div>
+              <div class="flex  items-center gap-3 ">
+                <p class="text-nowrap">ترتيب حسب</p>
+                <select class="form-select form-select-sm " aria-label="Large select example">
+                  <option selected>تاريخ التقديم</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <img src="/assets/search.svg" alt="" class="w-9">
+              </div>
+            </div>
+            <div class=" w-full table-responsive">
+              <table class="table mx-auto text-center table-striped ">
+                <thead>
+                  <tr class="text-nowrap p-5">
+                    <th scope="col">م</th>
+                    <th scope="col">رقم الطلب</th>
+                    <th scope="col">رقم البوليصة</th>
+                    <th scope="col">التاريخ</th>
+                    <th scope="col">الحالة</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-nowrap bg-slate-800 rounded">
+                    <th scope="row">1</th>
+                    <td>#455676766</td>
+                    <td>123512521</td>
+                    <td>1 يونيو 2023</td>
+                    <td class="text-warning">قيد المراجعة</td>
+                    <td><button class="btn rounded-2xl hover:text-white">عرض التفاصيل</button></td>
+                  </tr>
+                  <tr class="text-nowrap">
+                    <th scope="row">1</th>
+                    <td>#455676766</td>
+                    <td>123512521</td>
+                    <td>1 يونيو 2023</td>
+                    <td class="text-warning">قيد المراجعة</td>
+                    <td><button class="btn rounded-2xl hover:text-white">عرض التفاصيل</button></td>
+                  </tr>
+                  <tr class="text-nowrap">
+                    <th scope="row">1</th>
+                    <td>#455676766</td>
+                    <td>123512521</td>
+                    <td>1 يونيو 2023</td>
+                    <td class="text-warning">قيد المراجعة</td>
+                    <td><button class="btn rounded-2xl hover:text-white">عرض التفاصيل</button></td>
+                  </tr>
+                  <tr class="text-nowrap">
+                    <th scope="row">1</th>
+                    <td>#455676766</td>
+                    <td>123512521</td>
+                    <td>1 يونيو 2023</td>
+                    <td class="text-warning">قيد المراجعة</td>
+                    <td><button class="btn rounded-2xl hover:text-white">عرض التفاصيل</button></td>
+                  </tr>
+                  <tr class="text-nowrap">
+                    <th scope="row">1</th>
+                    <td>#455676766</td>
+                    <td>123512521</td>
+                    <td>1 يونيو 2023</td>
+                    <td class="text-warning">قيد المراجعة</td>
+                    <td><button class="btn rounded-2xl hover:text-white">عرض التفاصيل</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

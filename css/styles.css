@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --first-color: #F15A25;
+}
+
+html {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+  "slnt" 0;
+}
+
+.btn {
+  background-color: var(--first-color);
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #D33F26;
+}
+
+.active-link {
+  border-bottom: solid 1px var(--first-color) ;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  margin-bottom: 20px;
+}
+.link-secondary {
+  color: #1A1A1A;
+  font-weight: 500;
+  
+} 
+.btn-outline-primary{
+  border: unset;
+  color: #1A1A1A;
+  background-color: transparent;
+}
+.sidebar-open {
+  transform: translateX(0px) !important; 
+}
+
+.sidebarlinks ul li .active {
+  background:  #f15b258c ;
+  color : white;
+  
+}
+.sidebarlinks ul li .active img{
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+.sidebarlinks ul li:hover img{
+  filter: grayscale(100%) brightness(0) invert(1);
+}
+#notificationBtn:hover #notification {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+

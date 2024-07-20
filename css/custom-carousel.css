@@ -1,0 +1,81 @@
+.owl-carousel {
+  touch-action: manipulation;
+}
+.our-partners .owl-carousel .owl-nav .owl-prev,
+.our-partners .owl-carousel .owl-nav .owl-next,
+.customer .owl-carousel .owl-nav .owl-prev,
+.customer .owl-carousel .owl-nav .owl-next {
+  position: relative;
+  background: none;
+  top: 33%;
+}
+.our-partners .owl-carousel .slide-arrow,
+.customer .owl-carousel .slide-arrow {
+  border: none;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1ea4ce;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 3.22px 48.29px 0px #292c7c26;
+}
+.customer .owl-carousel .slide-arrow {
+  color: #000 !important;
+  font-size: 16px;
+}
+.customer .owl-carousel .slide-arrow:hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+.our-partners .owl-carousel .owl-nav .owl-prev,
+.customer .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+}
+.our-partners .owl-carousel .owl-nav .owl-next,
+.customer .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+}
+.our-partners .owl-carousel .owl-nav .owl-prev:hover,
+.our-partners .owl-carousel .owl-nav .owl-next:hover,
+.customer .owl-carousel .owl-nav .owl-prev:hover,
+.customer .owl-carousel .owl-nav .owl-next:hover {
+  background-color: inherit;
+}
+@media (max-width: 991px) {
+  .our-partners .owl-carousel .owl-nav .owl-prev,
+  .customer .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+  }
+  .our-partners .owl-carousel .owl-nav .owl-next,
+  .customer .owl-carousel .owl-nav .owl-next {
+    right: 0;
+  }
+  .our-partners .owl-carousel .slide-arrow,
+  .customer .owl-carousel .slide-arrow {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .our-partners .owl-theme .owl-dots {
+    display: none;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block !important;
+}
+
+.customer .owl-theme .owl-dot span.active {
+  color: red;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--main-color) !important;
+}
